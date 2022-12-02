@@ -1,0 +1,15 @@
+name = "quant"
+version = "0.1.0"
+license = "MIT OR Apache-2.0"
+author = "warlock <internalmike@gmail.com>"
+
+[dependencies]
+fgif = { git="https://github.com/jacobwilliams/fgif.git" }
+
+[build]
+auto-executables = true
+auto-tests = true
+auto-examples = true
+
+[install]
+library = false
