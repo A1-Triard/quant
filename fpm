@@ -5,4 +5,4 @@ cd "$(dirname "$(realpath "$0")")"
 
 triple="$(rustc -Vv | awk -F ': ' '{ if($1 == "host") print $2 }')"
 
-FPM_FFLAGS="-Wall -Werror -Wno-integer-division -Wno-zerotrip" fpm "$@"
+FPM_FFLAGS="-Wall -Werror -Wno-integer-division -Wno-zerotrip -Wno-uninitialized" fpm "$@"
